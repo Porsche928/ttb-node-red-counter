@@ -1,0 +1,27 @@
+{
+  "name": "ttb-node-red-counter",
+  "version": "0.0.1",
+  "description": "A node-red node to increment easily a variable",
+  "keywords": [
+    "node-red",
+    "counter",
+    "incrementer"
+  ],
+  "author": {
+    "name": "Maxime Journaux",
+    "email": "journaux.maxime@gmail.com"
+  },
+  "license": "WTFPL",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/"
+  },
+  "node-red": {
+    "nodes": {
+      "counter": "counter.js"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/cinhcet/node-red-contrib-mpd/issues"
+  }
+}

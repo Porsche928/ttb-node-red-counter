@@ -1,0 +1,44 @@
+
+<!--
+    Copyright © 2016 Maxime Journaux
+    This work is free. You can redistribute it and/or modify it under the
+    terms of the Do What The Fuck You Want To Public License, Version 2,
+    as published by Sam Hocevar. 
+    See http://www.wtfpl.net for more details.
+-->
+
+<script type="text/x-red" data-template-name="counter">
+    <div class="form-row">
+        <label for="node-input-inc"><i class="fa fa-tag"></i> Increment</label>
+        <input type="text" id="node-input-inc">
+    </div>
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+</script>
+
+<script type="text/x-red" data-help-name="counter">
+    <p>Counter node</p>
+    <p>Each message increment the node. It send the new counter state into <b>msg.payload</b>. Use <b>msg.reset</b> for reset the counter to 0.</p>
+</script>
+
+<script type="text/javascript">
+    RED.nodes.registerType("counter", {
+        category: "function",
+        defaults: {
+            inc: { value: 1, validate: RED.validators.number() },
+            name: { value: "" }
+        },
+        color: "#C7E9C0",
+        icon: "arrow-in.png", 
+        inputs: 1,
+        outputs: 1,
+        label: function() {
+            return this.name || "counter";
+        },
+        labelStyle: function() {
+            return this.name ? "node_label_italic" : "";
+        }
+    });
+</script>
