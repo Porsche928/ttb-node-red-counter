@@ -17,10 +17,14 @@ module.exports = function(RED) {
         node.counter = 0;
 
         node.on("input", function(msg) {
-            if(typeof msg.reset != "undefined")
+            if(typeof msg.intent != "undefined") {
+                if(msg.intent === 0) node.counter = 0;
+                else if(msg.intent === 3) node.counter = node.counter - node.inc;
+            } else if(typeof msg.reset != "undefined") {
                 node.counter = 0;
-            else
+            } else {
                 node.counter = node.counter + node.inc;
+            }
             msg.payload = node.counter;
             node.send(msg);
         });

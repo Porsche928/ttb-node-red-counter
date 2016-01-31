@@ -1,11 +1,16 @@
 {
   "name": "ttb-node-red-counter",
-  "version": "0.0.1",
-  "description": "A node-red node to increment easily a variable",
+  "version": "0.1.0",
+  "description": "A node-red node to increment or decrement. You can easily create a daily tweets counter with it for example.",
   "keywords": [
     "node-red",
     "counter",
-    "incrementer"
+    "incrementer",
+    "decrementer",
+    "thethingbox",
+    "ttb",
+    "timesquair",
+    "tsa"
   ],
   "author": {
     "name": "Maxime Journaux",
@@ -14,7 +19,7 @@
   "license": "WTFPL",
   "repository": {
     "type": "git",
-    "url": "https://github.com/"
+    "url": "https://github.com/zeitungen/ttb-node-red-counter"
   },
   "node-red": {
     "nodes": {
@@ -22,6 +27,6 @@
     }
   },
   "bugs": {
-    "url": "https://github.com/cinhcet/node-red-contrib-mpd/issues"
+    "url": "https://github.com/zeitungen/ttb-node-red-counter/issues"
   }
 }
