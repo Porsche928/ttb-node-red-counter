@@ -4,7 +4,7 @@ A node for [TimeSquAir](http://timesquair.io/), [TheThingBox](http://thethingbox
 
 Add a counter node. With it, you will able to increment and decrement a variable. For example, you will easily create a hashtag tweet counter with it !
 
-# Install
+## Install
 
     $ npm i ttb-node-red-counter --production
   
